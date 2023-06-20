@@ -10,6 +10,7 @@ penguins_clean <- penguins %>%
   as_tibble()
 
 
+
 penguins_clean %>% 
   select(species, island, body_mass_g) %>% 
   group_by(species, island) %>% 
@@ -18,3 +19,4 @@ penguins_clean %>%
   geom_tile(col = "white") +
   theme_bw(base_size = 14) +
   theme(legend.position = "bottom")
+
