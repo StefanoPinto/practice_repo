@@ -8,7 +8,7 @@ penguins_clean <- penguins %>%
   na.omit() %>% 
   map_at(.at = c("species", "island"), .f = ~tolower(.x)) %>% 
   as_tibble()
-
+  
 
 
 penguins_clean %>% 
